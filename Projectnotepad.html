@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Project Notepad</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+ 
+
+ <div class="form-popup" id="myForm">
+    <form  class="form-container">
+  
+    <p   style="color: rgb(248, 248, 248);" class="output" id="output1">1</p>
+    
+    <p1  style="color: rgb(248, 248, 248);" class="output" id="output2">2</p1>
+   
+    <br>
+    <p2  style="color: rgb(248, 248, 248);" class="output" id="output3">3</p2>
+    
+    <br>
+    <p3  style="color: rgb(248, 248, 248);" class="output" id="output4">4</p3>
+    
+    <br>
+    <p4  style="color: rgb(248, 248, 248);" class="output" id="output5">5</p4>
+    <br>
+    <p5  style="color: rgb(248, 248, 248);" class="output" id="output6">6</p5>
+    <br>
+    <p6  style="color: rgb(248, 248, 248);" class="output" id="output7">7</p6>
+    <br>
+    <p7  style="color: rgb(248, 248, 248);" class="output" id="output8">8</p7>
+    <br>
+    <p8  style="color: rgb(248, 248, 248);" class="output" id="output9">9</p8>
+    <br>
+    <p9  style="color: rgb(248, 248, 248);" class="output" id="output10">10</p9>
+    <br>
+    <p10  style="color: rgb(248, 248, 248);" class="output" id="output11">11</p10>
+    <br>
+    <p11  style="color: rgb(248, 248, 248);" class="output" id="output12">12</p11>
+    <br>
+    <p12  style="color: rgb(248, 248, 248);" class="output" id="output13">13</p12>
+    <br>
+    <p12  style="color: rgb(248, 248, 248);" class="output" id="output14">14</p12>
+    <br>
+    <br>
+    <p13  style="color: rgb(248, 248, 248);" class="output" id="output15">15</p13>
+    <br>
+    <p14  style="color: rgb(248, 248, 248);" class="output" id="output16">16</p14>
+    <br>
+    <textarea style="color: rgb(252, 250, 250);" class="output" id="output17" rows="4" cols="50">17</textarea>
+    <br><br>
+    <p15  style="color: rgb(248, 248, 248);" class="output" id="output18">18</p15>
+    <br><br>
+    <p16 >Agreement</p16>
+    <p17  style="display: none;" class="output" id="output19" >User Agree To Reolved the Ticket</p17>
+    
+    <p style="color: white;">KB Article :
+        <span class="op"></span>
+     </p>
+     
+    <br><br>
+    
+    
+
+    <button type="button" class="btn-cancel" onclick="closeForm()">X</button>
+
+ 
+    <p style="color: white;">Select KB:
+        <select id="s1">
+            <option value="[code]<a title='LW AD Password Reset – Account Verification Procedure (Active Employees)' href='kb_view.do?sys_kb_id=0913526097d7c1582ca05d14a253afa6' >KB0014170 : LW AD Password Reset – Account Verification Procedure (Active Employees)</a>[/code]">LW AD Password Reset</option>
+           <option value="[code]<a title='MS Outlook - Repair Application via Programs and Features' href='kb_view.do?sys_kb_id=07ba4e4797b509107b84f8890353af41' >KB0015030 : MS Outlook - Repair Application via Programs and Features</a>[/code]">MS Outlook - Repair Application</option>
+           <option value="[code]<a title='GSD: F5 VPN Login Issue' href='kb_view.do?sys_kb_id=dca3534487b8dd5059eaec609bbb357a'>KB0014109:GSD: F5 VPN Login Issue</a>[/code]">F5 VPN Login Issue</option>
+        </select>
+     </p>
+     
+     <span class="op"></span>
+   </p>
+   <input type="button" onclick="selOpt()" value="Attach KB">
+    
+     
+
+
+   
+</form>
+ </div>
+</div>
+
+ <body>
+
+        
+    
+    <header>
+        <h2 class="logo"> <ion-icon name="newspaper-outline"></ion-icon></span>Smart Pad</h2>
+        <nav class="navigation">
+            <span class="homeicon"><ion-icon name="home"></ion-icon></span>
+            <a href="#">Home</a>
+            <span class="tsicon"><ion-icon name="construct"></ion-icon></span>
+                <a href="#">Troubleshooting</a>
+                <span class="kbicon"><ion-icon name="book"></ion-icon></span>
+                    <a href="https://willistowerswatson.service-now.com/nav_to.do?uri=%2F$knowledge.do">KB Articles</a>
+                    <span class="SNicon"><ion-icon name="warning"></ion-icon></span>
+                    <a href="#">Soon..</a>
+                   
+                    
+                   <button class="button">NOTEPAD</button>
+                            
+        </nav>
+
+
+        
+    </header>  
+    
+
+        
+    
+    
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+    <div class="form-box-notepad">
+        <h3 style="color:  rgb(243, 239, 239);" >WTW IT Service Desk,<br> this is __________ (state your name),
+            May I have your name or UserID?</h3>
+      
+         <input type="button" onclick="window.location.reload()" value="New Notepad" style="background: yellowgreen;" >
+        <h1>SMART PAD</h1>
+
+        <form action="#">
+            <div class="input-box">
+                <spam class="icon"><ion-icon name="ticket"></ion-icon></spam>
+                
+                <label id="lbl" style="color: rgb(252, 251, 185);">INCIDENT:</label>
+                <input type="text" id="INC" placeholder="INCIDENT" maxlength="100" required>
+              
+
+               
+                
+         
+            <form action="#">
+                
+                <div class="input-box">
+                    <spam class="icon"><ion-icon name="people-outline"></ion-icon></spam>
+
+                    <label style="color: rgb(252, 251, 185);">Name:</label>
+                    <input type="text" id="txt1" placeholder="Name" maxlength="100" required>
+                    
+                    <form action="#">
+                        <div class="input-box">
+                            <spam class="icon"><ion-icon name="id-card"></ion-icon></spam>
+                            <label style="color: rgb(252, 251, 185);">UserID:</label>
+                            <input type="text" id="txt2" placeholder="UserID:" maxlength="100" required>
+
+                    <br>
+                    <form action="#">
+                        <spam  class="icon"><ion-icon name="globe"></ion-icon></spam>
+                        <label1 style="color: rgb(252, 251, 185)";>LTW/LW</label1>
+                        <select name="dmn" id="dmn" >
+                          <option value="LTW">LTW</option>
+                          <option value="LW">LW</option>
+                        
+                        </select>
+                                  
+
+                        <br>
+                        <form action="#">
+                            <spam class="icon"><ion-icon name="location"></ion-icon></spam>
+                            <label1 style="color: rgb(252, 251, 185)";>Current Location</label1>
+                        <select name="cl" id="cl" >
+                          <option value="Office">Office</option>
+                          <option value="Remotely">Remotely</option>
+                        
+                            
+                            </select>
+
+                                            <form action="#">
+                                                <div class="input-box">
+                                                    <spam class="icon"><ion-icon name="business"></ion-icon></spam>
+                                                    <label style="color: rgb(252, 251, 185);">Office Location:</label>
+                                                    <input type="text" id="txt3" placeholder="Office Location:" maxlength="100" required>
+
+                                                    <form action="#">
+                                                        <div class="input-box">
+                                                            <spam class="icon"><ion-icon name="time"></ion-icon></spam>
+                                                            <label style="color: rgb(252, 251, 185);">Business Hours:</label>
+                                                            <input type="text" id="txt4" placeholder="Business Hours" maxlength="100" required>          
+
+                                                            <form action="#">
+                                                                <div class="input-box">
+                                                                    <spam class="icon"><ion-icon name="call"></ion-icon></spam>
+                                                                    <label style="color: rgb(252, 251, 185);">Best Callback Number:</label>
+                                                                    <input type="text" id="txt5" placeholder="Best Callback Number" maxlength="100" required> 
+
+                                                                    <form action="#">
+                                                                        <div class="input-box">
+                                                                            <spam class="icon"><ion-icon name="alarm"></ion-icon></spam>
+                                                                            <label style="color: rgb(252, 251, 185);">Preferred Time of Callback:</label>
+                                                                            <input type="text" id="txt6" placeholder="Preferred Time of Callback " maxlength="100" required>
+                                                                            
+                                                                            <form action="#">
+                                                                                <div class="input-box">
+                                                                                    <spam class="icon"><ion-icon name="calendar-outline"></ion-icon></spam>
+                                                                                    <label style="color: rgb(252, 251, 185);">Availability time/date:</label>
+                                                                                    <input type="time" id="txt7" placeholder="Preferred Date and Time: " maxlength="100" > <input type="date" id="txt8">   
+                                                                                    
+                                                                                    <form action="#">
+                                                                                        <div class="input-box">
+                                                                                            <spam class="icon"><ion-icon name="laptop-outline"></ion-icon></spam>
+                                                                                            <label style="color: rgb(252, 251, 185);">Machine Name:</label>
+                                                                                            <input type="text" id="txt9" placeholder="Machine Name:" maxlength="100" required>
+
+                                                                                            <form action="#">
+                                                                                                <div class="input-box">
+                                                                                                    <spam class="icon"><ion-icon name="business-outline"></ion-icon></spam>
+                                                                                                    <label style="color: rgb(252, 251, 185);">Floor & Desk Number:</label>
+                                                                                                    <input type="text" id="txt10" placeholder="Floor & Desk Number:" maxlength="100" required>
+
+                                                                                                    <form action="#">
+                                                                                                        <div class="input-box">
+                                                                                                            <spam class="icon"><ion-icon name="qr-code-outline"></ion-icon></spam>
+                                                                                                            <label style="color: rgb(252, 251, 185);">Serial Number:</label>
+                                                                                                            <input type="text" id="txt11" placeholder="Serial Number:" maxlength="100" required>
+
+
+                                                                                                            <form action="#">
+                                                                                                                <div class="input-box">
+                                                                                                                    <spam class="icon"><ion-icon name="calendar-number-outline"></ion-icon></spam>
+                                                                                                                    <label style="color: rgb(252, 251, 185);">Warranty:</label>
+                                                                                                                    <input type="date" id="txt12"  >
+
+
+                                                                                                                    <br>
+
+                                                                                                                    <form action="#">
+                                                                                                                        <div class="input-box1">
+                                                                                                                            <spam class="icon"><ion-icon name="calendar-number-outline"></ion-icon></spam>
+                                                                                                                            <label style="color: rgb(252, 251, 185);">Problem:</label>
+                                                                                                                            <input type="text" id="txt13" placeholder="Problem" maxlength="100" required>
+
+ 
+
+                                                                                                                          
+                                                                                                                            <br>
+
+                                                                                                                            <form action="#">
+                                                                                                                                <spam class="icon"><ion-icon name="build-outline"></ion-icon></spam>
+                                                                                                                                <label for="ActionTaken" style="color: rgb(252, 251, 185);">Action Taken:</label>
+                                                                                                                                <br>
+                                                                                                                                <textarea id="textarea" name="ActionTaken" rows="4" cols="50"  ></textarea>
+
+                                                                                                                                <br>
+
+                                                                                                                                <form action="#">
+
+                                                                                                                                    <spam class="icon"><ion-icon name="build-outline"></ion-icon></spam>
+                                                                                                                                    <label for="resolution" style="color: rgb(252, 251, 185);">Resolution:</label>
+                                                                                                                                    <br>
+                                                                                                                                    <textarea id="txt14" name="resolution" rows="1" cols="50" ></textarea>
+
+                                                                                                                                        <br>
+                                                                                                                                        <br>
+
+                                                                                                                                        <form action="#">
+                                                                                                                                            <label for="UserAgree" style="color: rgb(252, 251, 185);">Agreement:</label>
+                                                                                                                                           
+                                                                                                                                            <spam class="icon"><ion-icon name="thumbs-up"></ion-icon></spam> <input type="checkbox" id="cb1" onclick="myFunction()" >
+                                                                                                                                            
+
+                                                                                                                                            <input class="open-button" type="button" id="btn1" value="Submit" onclick="openForm()">
+                                                                                                                                            
+                                                                                                                                        
+
+                                                                                                                                            
+                                                                                                                               
+                                                                                                                                
+                                                                                                                           
+
+
+                                        </div>           
+                                </div>           
+                        </div>           
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+</div>       
+
+
+
+                                                                                                                                            
+     
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+ </body>
+
+
+ </html>
+
+ 
+  
+
